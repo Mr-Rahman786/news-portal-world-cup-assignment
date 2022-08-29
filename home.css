@@ -53,10 +53,65 @@
     zoom: 0.5s;
     background-color: purple;
 }
+/* -----------------second section finished ------------*/
+.second-section{
+    width:80%;
+    /* background-color: aqua; */
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.top-button {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 50px;
+    background-color: black;
+    padding: 27px;
+    border-radius: 10px;
+    /* width: 500px; */
+}
 
-/* .arrow-btn {
-    position: relative;
-    top: 3px;
-    left: 7px;
-} */
+.button-main {
+    font-size: 1.2rem;
+    border: none;
+    padding: 10px 25px;
+    background-color: rgb(241, 230, 230);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.button-main a {
+    text-decoration: none;
+    color: white;
+}
+
+.extra {
+    background-color: red;
+    font-size: 1.1rem;
+}
+.flag-main{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 10%;
+    grid-column-gap: 6%;
+}
+#VS{
+    padding: 5px;
+}
+.flex-flag{
+    display: flex;
+    width: 100%;
+    box-shadow: 2px 5px 17px black;
+    border-radius: 10px;
+    height: 200px;
+    padding: 2px;
+    /* padding: 5px; */
+}
+h6{
+    text-align: center;
+}
+.flag-item img{
+    width: 100%;
+    padding: 5px;
+    padding: 2px;
+}
 
