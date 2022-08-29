@@ -60,5 +60,143 @@ body{
     top:3px;
     left: 7px;
 }
+/* -----------------first-section finished ---------------*/
 
-/* first-section */
+
+/*----------------------
+    second section start
+-----------------------*/
+.second-section{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.grid-section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 5%;
+    grid-row-gap: 10%;
+}
+.items{
+    background-color: rgb(16, 13, 13);
+    width: 15%;
+    margin-top: 10%;
+    padding: 20px;
+    border-radius: 10px;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    
+}
+.half-item{
+    text-decoration: none;
+    margin-top: 60px;
+    /* padding: 20px 20px; */
+
+}
+
+
+/* players item news */
+.top-button{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap:50px ;
+    background-color: black;
+    padding: 27px;
+    border-radius: 10px;
+    /* width: 500px; */
+}
+.button-main{
+    font-size: 1.2rem;
+    border: none;
+    padding: 10px 25px;
+    background-color: rgb(241, 230, 230);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+.button-main a{
+    text-decoration: none;
+    color: white;
+}
+.extra{
+    background-color: red;
+}
+.news-play img{
+    width: 100%;
+}
+.item-players-5{
+    position: relative;
+    left: 600px;
+    
+}
+.player-4{
+    position: relative;
+    left: 125%;
+}
+.item-players-6 {
+    position: relative;
+    left: 600px;
+
+}
+.must{
+    position: relative;
+    left: 300px;
+}
+.view-button {
+    padding-top: 20px;
+    
+}
+.view-btn{
+    padding: 5px 20px;
+    text-decoration: none;
+    background-color: crimson;
+    color: white;
+    border-radius: 10px;
+}
+.icon-flex{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 25px;
+}
+
+
+
+
+/* media quries start(mobile-view) */
+@media screen and (max-width:576px) {
+    body{
+        margin: 0;
+    }
+        .main-section-first{
+            width: 80%;
+        }
+    .first-section{
+        flex-direction: column;
+        /* padding: 0; */
+        margin: 0;
+    }
+    .btn-1{
+        padding-left: 15%;
+    }
+    .first-section img{
+        width: 100%;
+        padding-top: 30px;
+    }
+    .half-width-first-section{
+        width: 100%;
+    }
+    .grid-section{
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap:0%;
+        grid-row-gap:2%;
+    }
+    .player-4{
+        left: 0;
+    }
+    .button-main{
+        padding: 10px 40px;
+        background-color: none;
+    }
+}
+/* Mobile View finished */
