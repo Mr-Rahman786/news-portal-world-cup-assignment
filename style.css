@@ -7,6 +7,48 @@
 body{
     margin: 0;
 }
+/* navigation menu */
+
+nav{
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+}
+.gohe{
+    color: orangered;
+    position: relative;
+    right: 200px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+
+}
+.nav-item{
+    padding: 10px 50px;
+    font-size: 1.2rem;
+}
+
+.another{
+    position: relative;
+    left: 100px;
+    font-size: 2rem;
+}
+.hiden-menu{
+    display: none;
+}
+.header-menu-item{
+    text-decoration: none;
+    color: white;
+    transform: 0.8;
+}
+.header-menu-item:hover{
+    color: red;
+    transition: 0.4s;
+}
+
 /* ----------------First-section-start-------------- */
 .main-section-first{
     width: 80%;
@@ -161,11 +203,107 @@ body{
     font-size: 25px;
 }
 
+/*-------------------------------- footer -------------------------*/
+footer {
+    margin-top: 180px;
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+}
+
+hr {
+    width: 70%;
+    opacity: 0, 5;
+}
+
+.footer-main {
+    height: 250px;
+}
+
+.footer-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-anchor {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    transform: 0.4;
+}
+
+.footer-parent {
+    padding-top: 10px;
+}
+
+.reserver {
+    font-family: 'Qwitcher Grypen', cursive;
+    font-size: 2.7rem;
+    transform: 0.8;
+}
+
+.hiden-logo {
+    display: none;
+}
+
+.reserver:hover {
+    color: crimson;
+    transition: 0.8s;
+}
+
+.footer-anchor:hover {
+    color: orangered;
+    transition: 0.6s;
+}
+
+.iconify-footer {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconify-item {
+    padding: 20px;
+    font-size: 1.5rem;
+    /* margin-bottom: 10px; */
+    transform: 0.8;
+}
+
+.iconify-item:hover {
+    color: red;
+    transition: 0.9s;
+}
+
+
+
+
 
 
 
 /* media quries start(mobile-view) */
 @media screen and (max-width:778px) {
+    
+    .nav-item {
+        display: none;
+        padding: 0px 0px;
+        margin-right: 0;
+    }
+    .gohe{
+        right: 0;
+        margin-right: 50%;
+        font-size: 2rem;
+    }
+    .hiden-menu{
+        display: block;
+        font-size: 2.5rem;
+        padding-right: 5px;
+        margin-top: 10px;
+    }
+
+
+    /* Nav finished */
     body{
         margin: 0;
     }
@@ -186,6 +324,7 @@ body{
     }
     .half-width-first-section{
         width: 100%;
+        /* padding-left: 2%; */
     }
     .grid-section{
         grid-template-columns: repeat(1, 1fr);
@@ -199,12 +338,51 @@ body{
         padding: 10px 40px;
         background-color: none;
     }
+        /* footer-section */
+        footer {
+            margin-top: 500px;
+        }
+    
+        .footer-main {
+            height: 400px;
+        }
+    
+        .footer-anchor {
+            margin: 10px;
+        }
+    
+        .hiden-logo {
+            display: block;
+            /* padding-bottom: 10%; */
+            position: relative;
+            bottom: 50px;
+        }
+    
+        .header-no-6 {
+            font-size: 1.5rem;
+            font-family: 'Qwitcher Grypen', cursive;
+        }
+    
+        .hiden-logo-items {
+            font-size: 2rem;
+            display: flex;
+            justify-content: space-evenly;
+            position: relative;
+            bottom: 40px;
+        }
+    
+        .footer-item {
+            flex-direction: column;
+            display: none;
+            /* padding: 20px; */
+        }
 }
 /* Mobile View finished */
 
 
 /* tablet view start */
-@media screen and (min-width:767px) and (max-width:1024px){
+@media screen and (min-width:779px) and (max-width:1024px){
+    
     .top-button{
         display: none;
     }

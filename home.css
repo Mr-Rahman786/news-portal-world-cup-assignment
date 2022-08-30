@@ -3,8 +3,56 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
 
+body{
+    margin: 0;
+}
+/* navigation menu */
 
+nav {
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+}
 
+.gohe {
+    color: orangered;
+    position: relative;
+    right: 200px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+
+}
+
+.nav-item {
+    padding: 10px 50px;
+    font-size: 1.2rem;
+}
+
+.another {
+    position: relative;
+    left: 100px;
+    font-size: 2rem;
+}
+
+.hiden-menu {
+    display: none;
+}
+
+.header-menu-item {
+    text-decoration: none;
+    color: white;
+    transform: 0.8;
+}
+
+.header-menu-item:hover {
+    color: red;
+    transition: 0.4s;
+}
+/* nav finished */
 
 .main-section-first {
     width: 80%;
@@ -249,7 +297,27 @@ h6{
 
 
 /* media Query */
-@media screen and (max-width:576px) {
+@media screen and (max-width:778px) {
+    /* nav ite */
+        .nav-item {
+                display: none;
+                padding: 0px 0px;
+                margin-right: 0;
+            }
+        
+            .gohe {
+                right: 0;
+                margin-right: 50%;
+                font-size: 2rem;
+            }
+        
+            .hiden-menu {
+                display: block;
+                font-size: 2.5rem;
+                padding-right: 5px;
+                margin-top: 10px;
+            }
+    /* nav finished */
     .first-heading{
         font-size: 1.5rem;
     }
@@ -307,7 +375,7 @@ h6{
     }
     /* footer-section */
     footer{
-        margin-top: 700px;
+        margin-top: 500px;
     }
     .footer-main{
         height: 300px;
