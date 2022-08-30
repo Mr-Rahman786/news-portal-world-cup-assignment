@@ -52,7 +52,7 @@ nav {
     color: red;
     transition: 0.4s;
 }
-/* nav finished */
+/* ----------------nav finished----------- */
 
 .main-section-first {
     width: 80%;
@@ -314,8 +314,12 @@ h6{
             .hiden-menu {
                 display: block;
                 font-size: 2.5rem;
-                padding-right: 5px;
+                position: relative;
+                left: 15px;
                 margin-top: 10px;
+                border: 1px solid orangered;
+                padding: 1px 5px;
+                border-radius: 10px;
             }
     /* nav finished */
     .first-heading{
@@ -323,11 +327,13 @@ h6{
     }
     .main-section-first{
         width: 80%;
+        margin-top: 20px;
     }
     .first-section{
         flex-direction: column;
         /* padding: 0; */
-        margin-left: 0;
+        margin-left: 2%;
+        
     }
     .first-section img{
         width: 100%;
